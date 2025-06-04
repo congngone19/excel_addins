@@ -20,7 +20,7 @@
     "prettier": "office-addin-lint prettier",
     "signin": "office-addin-dev-settings m365-account login",
     "signout": "office-addin-dev-settings m365-account logout",
-    "start": "react-scripts start manifest.xml",
+    "start": "react-scripts start",
     "validate": "office-addin-manifest validate manifest.xml",
     "watch": "webpack --mode development --watch"
   },
