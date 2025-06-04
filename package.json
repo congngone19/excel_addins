@@ -20,8 +20,9 @@
     "prettier": "office-addin-lint prettier",
     "signin": "office-addin-dev-settings m365-account login",
     "signout": "office-addin-dev-settings m365-account logout",
-    "start": "office-addin-debugging start manifest.xml",
-    "stop": "office-addin-debugging stop manifest.xml",
+    "start": "webpack serve --mode development",
+    "debug": "office-addin-debugging start manifest.xml",
+    "stop-debug": "office-addin-debugging stop manifest.xml",
     "validate": "office-addin-manifest validate manifest.xml",
     "watch": "webpack --mode development --watch"
   },
@@ -38,8 +39,8 @@
     "@babel/core": "^7.24.0",
     "@babel/plugin-transform-class-properties": "^7.3.0",
     "@babel/preset-env": "^7.25.4",
-    "@babel/preset-typescript": "^7.24.1",
     "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
     "@types/es6-collections": "^0.5.36",
     "@types/office-js": "^1.0.377",
     "@types/office-runtime": "^1.0.35",
@@ -69,9 +70,9 @@
     "source-map-loader": "^5.0.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.2",
-    "webpack": "^5.95.0",
+    "webpack": "^5.99.9",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "5.1.0"
+    "webpack-dev-server": "^5.1.0"
   },
   "prettier": "office-addin-prettier-config",
   "browserslist": [
